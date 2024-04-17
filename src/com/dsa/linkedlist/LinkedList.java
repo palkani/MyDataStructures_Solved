@@ -32,6 +32,20 @@ public class LinkedList {
         prev.next =node;
     }
 
+    public void  delete(int position){
+
+        if(position == 0){
+            head = head.next;
+            return;
+        }
+        Node dNode = head;
+        for(int i=0;i <position-1;i++){
+            dNode = dNode.next;
+        }
+
+        dNode.next =dNode.next.next;
+    }
+
     public void printLinkedList(){
         Node curr = head;
         while(curr !=null){

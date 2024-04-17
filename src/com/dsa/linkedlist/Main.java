@@ -9,12 +9,11 @@ public class Main {
     LinkedList  ll = new LinkedList();
     ll.add(10);
     ll.add(20);
-        ll.add(300,0);
-    ll.add(30,2);
+    ll.add(300);
+    ll.add(300);
+    ll.printLinkedList();
+    System.out.println("After Delete a Node");
     ll.printLinkedList();
 
-        List list = new java.util.LinkedList();
-        list.add(20);
-        System.out.println(list);
     }
 }
